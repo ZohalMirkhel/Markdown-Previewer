@@ -2,9 +2,37 @@ import React, { useState } from 'react';
 import Editor from './components/Editor';
 import Previewer from './components/Previewer';
 
+const initialMarkdown = `# Zohal Mirkhel
+
+## Markdown Previewer
+
+Welcome to my Markdown Previewer! Here, you can write Markdown and see the live preview of how it will render.
+
+[Click here to visit my GitHub Repository](https://github.com/ZohalMirkhel/markdown-previewer/tree/markdown-previewer)
+
+\`inline code\`
+
+\`\`\`
+function exampleFunction() {
+  console.log("This is a code block");
+}
+\`\`\`
+
+- List item 1
+- List item 2
+- List item 3
+
+> This is a blockquote. It is used to highlight quotes.
+
+![Coding Image](https://markdownlivepreview.com/image/sample.webp)
+
+**This text is bold.**
+
+`;
+
 function App() {
   
-  const [markdown, setMarkdown] = useState(`# Markdown Previewer\n\nType some *Markdown* here!`);
+  const [markdown, setMarkdown] = useState(initialMarkdown);
 
   const handleMarkdownChange = (newMarkdown) => {
     setMarkdown(newMarkdown);

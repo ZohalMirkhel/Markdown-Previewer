@@ -7,6 +7,7 @@ marked.setOptions({
 
 function Previewer({ markdown }) {
   return (
+    <div className="p-4 bg-white rounded-lg shadow-lg border border-gray-200 overflow-y-auto max-h-[80vh]">
     <div
       id="preview"
       className="preview-container p-4 border rounded-md bg-white shadow-sm"
@@ -16,6 +17,7 @@ function Previewer({ markdown }) {
       }}
       dangerouslySetInnerHTML={{ __html: marked(markdown) }}
     />
+    </div>
   );
 }
 

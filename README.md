@@ -21,7 +21,7 @@ The Markdown Previewer is a React application that allows users to write Markdow
 
 ## Live Demo
 
-![alt text](image.png)
+![alt text](demo.png)
 You can view a live demo of the project [here](https://markdown-previewer--markdown-previewer-zohal.netlify.app/).
 
 

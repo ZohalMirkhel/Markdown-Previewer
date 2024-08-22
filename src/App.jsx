@@ -20,15 +20,17 @@ function exampleFunction() {
 }
 \`\`\`
 
-- List item 1
-- List item 2
-- List item 3
+- Random Quote Machine
+- MarkDown Previewer
+- Drum Machine
+- JavaScript Calculator 
+- 25+5 Clock
 
 > This is a blockquote. It is used to highlight quotes.
 
 ![Coding Image](https://markdownlivepreview.com/image/sample.webp)
 
-**This text is bold.**
+**Happy Marking.**
 
 `;
 

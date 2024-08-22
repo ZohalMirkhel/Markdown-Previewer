@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Editor from './components/Editor';
 import Previewer from './components/Previewer';
+import Footer from './components/Footer';
 
 const initialMarkdown = `# Zohal Mirkhel
 
@@ -35,10 +36,6 @@ function App() {
   
   const [markdown, setMarkdown] = useState(initialMarkdown);
 
-  const handleMarkdownChange = (newMarkdown) => {
-    setMarkdown(newMarkdown);
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-700 text-white flex flex-col">
       <Navbar />
@@ -52,6 +49,7 @@ function App() {
           <Previewer markdown={markdown} />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

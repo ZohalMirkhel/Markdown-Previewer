@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Navbar from './components/Navbar';
 import Editor from './components/Editor';
 import Previewer from './components/Previewer';
 
@@ -39,11 +40,17 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <h1 className="text-3xl font-bold text-center mb-6">Markdown Previewer</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <Editor markdown={markdown} onMarkdownChange={handleMarkdownChange} />
-        <Previewer markdown={markdown} />
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-700 text-white flex flex-col">
+      <Navbar />
+      <div className="container mx-auto py-10 px-4 flex flex-col lg:flex-row gap-8">
+        <div className="w-full lg:w-1/2">
+          <h2 className="text-xl mb-4 font-semibold">Editor</h2>
+          <Editor markdown={markdown} setMarkdown={setMarkdown} />
+        </div>
+        <div className="w-full lg:w-1/2">
+          <h2 className="text-xl mb-4 font-semibold">Previewer</h2>
+          <Previewer markdown={markdown} />
+        </div>
       </div>
     </div>
   );

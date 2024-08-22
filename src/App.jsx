@@ -28,7 +28,7 @@ function exampleFunction() {
 
 > This is a blockquote. It is used to highlight quotes.
 
-![Coding Image](https://markdownlivepreview.com/image/sample.webp)
+![Doodle Guy](https://markdownlivepreview.com/image/sample.webp)
 
 **Happy Marking.**
 
